@@ -1,7 +1,11 @@
+import BlogIcon from "@/components/ui/BlogIcon";
 import { getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
+import { Breadcrumbs, Typography } from "@mui/material";
+import { RiArticleLine, RiHome2Line } from "@remixicon/react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
@@ -83,6 +87,32 @@ export default async function Blog({
           }),
         }}
       />
+      <div className="mb-4">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link
+            href="/"
+          >
+            <div className="flex items-center">
+              <RiHome2Line className="mr-2"/>
+              Accueil
+            </div>
+          </Link>
+          <Link
+            href="/blog"
+          >
+            <div className="flex items-center">
+              <RiArticleLine className="mr-2" />
+              Blog
+            </div>
+          </Link>
+          <Typography>
+            <span className="flex items-center">
+              <BlogIcon blogIconText={post.metadata.type} />
+              {post.metadata.title}
+            </span>
+          </Typography>
+        </Breadcrumbs>
+      </div>
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
         {post.metadata.title}
       </h1>
