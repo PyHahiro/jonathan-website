@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -6,6 +5,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { Tooltip } from "@mui/material";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -17,25 +17,36 @@ export default function Page() {
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Bonjour, je suis ${DATA.name.split(" ")[0]} 👋`}
-              />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
-            </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
+            <BlurFade delay={BLUR_FADE_DELAY} className="mr-6">
               <Avatar className="size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
+            <div className="flex-col flex flex-1 space-y-1.5">
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                yOffset={8}
+                text={`Jonathan`}
+              />
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-bold tracking-tighter sm:text-3xl xl:text-3xl/none"
+                yOffset={8}
+                text={`MARTIN--MAESTRE`}
+              />
+              <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center">
+                <div>{DATA.description}</div>
+                <Link href="/blog/anti-ai">
+                  <Tooltip title="Je n'utilise pas d'IA pour rédiger ce site web, cliquer pour voir pourquoi" arrow>
+                    <img className="mr-1 w-8" src="/no-ai.svg" alt="No AI" />
+                  </Tooltip>
+                </Link>
+              </BlurFade>
+              
+              
+            </div>
           </div>
         </div>
       </section>
@@ -149,6 +160,18 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="blog-redirect">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Intéréssé.e d'en apprendre plus sur ce que j'ai a dire ?
+              </h2>
+          <Link href="/blog">
+            <button className="mt-2 w-fit rounded-xl bg-primary px-4 py-2 text-white shadow-md transition hover:bg-primary/90">
+              Lire mon blog
+            </button>
+          </Link>
         </div>
       </section>
     </main>

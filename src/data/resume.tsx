@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { RiArticleLine } from "@remixicon/react";
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 
 export const DATA = {
@@ -8,8 +9,8 @@ export const DATA = {
   description:
     "Développeur fullstack",
   summary:
-    `À la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
-    Cela est peut-être étrange, mais l'informatique n'est pas ma passion première. Je pense cependant que c'est cela qui fait ma force, me permettant d'appliquer une grande rigueur et un sérieux au travail. 
+    `J'ai 24 ans et à la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
+    Cela est peut-être étrange, mais l'informatique n'est pas ma passion première. Je pense cependant que c'est cela qui fait ma force, ce qui me permet d'appliquer une plus grande rigueur et un meilleur sérieux au travail. 
     `,
   avatarUrl: "/me.jpg",
   skills: [
@@ -134,7 +135,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       dates: "Septembre 2022 - Mars 2024",
       active: true,
       description:
-        "Avec la collaboration des équipes d'Anabasis, j'ai participé extensivement a l'elaboration de l'application web (anciennement avec puis migré sous NextJS) et de l'architecture de l'API sémantique derrière la technologie Karnyx, j'ai aussi participé a l'élaboration de leur langage ontologique nommé Kalamar.",
+        "Avec la collaboration des équipes d'Anabasis, j'ai participé extensivement à l'élaboration de l'application web (anciennement avec puis migré sous NextJS) et de l'architecture de l'API sémantique derrière la technologie Karnyx, j'ai aussi participé à l'élaboration de leur langage ontologique nommé Kalamar.",
       technologies: [
         "NextJS 13",
         "NextJS 14",
@@ -160,7 +161,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       dates: "Septembre 2021 - Août 2022",
       active: true,
       description:
-        "J'ai conçus et développé une application web pour l'annotation d'enluminure afin d'entrainer une intelligence artificielle à la reconnaissance d'éléments et de concepts dans une image médiévale.",
+        "J'ai conçu et développé une application web pour l'annotation d'enluminure afin d'entraîner une intelligence artificielle à la reconnaissance d'éléments et de concepts dans une image médiévale.",
       technologies: [
         "Angular",
         "Typescript",
@@ -182,12 +183,38 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       video: "/videos/Illumination.mp4",
     },
     {
+      title: "Recovery",
+      href: "#",
+      dates: "Avril 2024 - Maintenant",
+      active: true,
+      description:
+        "Je participe principalement à la maintenance, optimisation et à " +
+        "l\'amélioration de la qualité de code de l\'application. Incluant la grande variété de données client, plugins concurrents " +
+        "et règles métiers qui sont liées au contexte de nos outils notariaux.",
+        technologies: [
+        "C#",
+        "Optimisation",
+        "ETL",
+        "Design patterns",
+        "SQL",
+      ],
+      links: [
+        {
+          type: "Article",
+          href: "www.jonathanmartinmaestre.fr/blog/recovery-optimisation",
+          icon: <RiArticleLine className="size-3" />,
+        }
+      ],
+      image: "/wip.png",
+      video: "",
+    },
+    {
       title: "Tracking Data",
       href: "#",
       dates: "Avril 2024 - Maintenant",
       active: true,
       description:
-        "J'ai conçus et développé une application web pour le suivi des données et des opérations de notre service interne dans le cadre du RGPD, cette application consiste à la création et la consultation de formulaires complexes avec de nombreuses règles métiers. Mais aussi a la recherche de données temporelles.",
+        "J'ai conçu et développé une application web pour le suivi des données et des opérations de notre service interne dans le cadre du RGPD, cette application consiste à la création et à la consultation de formulaires complexes avec de nombreuses règles métiers. Mais aussi à la recherche de données temporelles.",
       technologies: [
         "React",
         "Typescript",
@@ -206,7 +233,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       dates: "Septembre 2022 - Mars 2024",
       active: true,
       description:
-        "J'ai maintenu et développé une application web et une API sémantique dans le cadre de la gestion d'information à propos des AOP fromagères, dont l'implémentation de composants graphiques pour afficher des graphes de connaissances ou de la gestion de groupe utilisateurs",
+        "J'ai maintenu et développé une application web et une API sémantique dans le cadre de la gestion d'informations à propos des AOP fromagères, dont l'implémentation de composants graphiques pour afficher des graphes de connaissances ou de la gestion de groupe d'utilisateurs",
       technologies: [
         "Angular",
         "Typescript",
