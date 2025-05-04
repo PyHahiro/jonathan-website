@@ -165,7 +165,7 @@ export default function Page() {
       <section id="blog-redirect">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Intéréssé.e d'en apprendre plus sur ce que j'ai a dire ?
+                {`Intéréssé.e d'en apprendre plus sur ce que j'ai a dire ?`}
               </h2>
           <Link href="/blog">
             <button className="mt-2 w-fit rounded-xl bg-primary px-4 py-2 text-white shadow-md transition hover:bg-primary/90">
