@@ -9,7 +9,7 @@ export const DATA = {
   description:
     "Développeur fullstack",
   summary:
-    `J'ai 24 ans et à la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
+    `J'ai 25 ans et à la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
     Cela est peut-être étrange, mais l'informatique n'est pas ma passion première. Je pense cependant que c'est cela qui fait ma force, ce qui me permet d'appliquer une plus grande rigueur et un meilleur sérieux au travail. 
     `,
   avatarUrl: "/me.jpg",
@@ -209,6 +209,33 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       video: "",
     },
     {
+      title: "Reprise différentielle",
+      href: "#",
+      dates: "Juin 2025 - Maintenant",
+      active: true,
+      description:
+        "Nous avons crée un PlugIn interne utilisé à des fins de reprises différentielles de données concurrentes." +
+        " Cet outil nous permets de répondre a une problématique d'optimisation des données et des temps de traitements liés au nombre massif de documents clients." ,
+        technologies: [
+        "C#",
+        "Optimisation",
+        "Différentiel",
+        "Data Engineering",
+        "ETL",
+        "Design patterns",
+        "SQL",
+      ],
+      links: [
+        {
+          type: "Article",
+          href: "www.jonathanmartinmaestre.fr/blog/recovery-optimisation",
+          icon: <RiArticleLine className="size-3" />,
+        }
+      ],
+      image: "/wip.png",
+      video: "",
+    },
+    {
       title: "Tracking Data",
       href: "#",
       dates: "Avril 2024 - Maintenant",
@@ -239,8 +266,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
         "Typescript",
         "Kotlin",
         "Knowledge Graph",
-        "Web sémantique",
-        ""
+        "Web sémantique"
       ],
       links: [
         {
