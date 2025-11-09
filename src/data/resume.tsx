@@ -9,11 +9,18 @@ export const DATA = {
   description:
     "Développeur fullstack",
   summary:
-    `J'ai 24 ans et à la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
+    `J'ai 25 ans et à la fin mes études en informatique a Dijon, je suis venu m'installer a Montpellier pour mon premier CDI, je suis un fan d'escalade en bloc, de jeux vidéos et de jeux de roles.
     Cela est peut-être étrange, mais l'informatique n'est pas ma passion première. Je pense cependant que c'est cela qui fait ma force, ce qui me permet d'appliquer une plus grande rigueur et un meilleur sérieux au travail. 
     `,
   avatarUrl: "/me.jpg",
   skills: [
+    "C#",
+    "XUnit",
+    "LinQ",
+    "Entity Framework 6 Core",
+    "Azure Devops",
+    "Azure Pipelines",
+    "TailwindCSS",
     "React",
     "Next.js 13",
     "Next.js 14 (App router)",
@@ -22,7 +29,6 @@ export const DATA = {
     "Typescript",
     "Node.js",
     "Python",
-    "C#",
     "Java",
     "Dockerfile",
     "Docker-compose",
@@ -198,6 +204,34 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
         "Design patterns",
         "SQL",
       ],
+      
+      links: [
+        {
+          type: "Article",
+          href: "blog/recovery-optimisation",
+          icon: <RiArticleLine className="size-3" />,
+        }
+      ],
+      image: "/recovery.png",
+      video: "",
+    },
+    {
+      title: "Reprise différentielle",
+      href: "#",
+      dates: "Juin 2025 - Maintenant",
+      active: true,
+      description:
+        "Nous avons créé un PlugIn interne utilisé à des fins de reprises différentielles de données concurrentes." +
+        " Cet outil nous permet de répondre à une problématique d'optimisation des données et des temps de traitements liés au nombre massif de documents clients." ,
+        technologies: [
+        "C#",
+        "Optimisation",
+        "Différentiel",
+        "Data Engineering",
+        "ETL",
+        "Design patterns",
+        "SQL",
+      ],
       links: [
         {
           type: "Article",
@@ -205,7 +239,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
           icon: <RiArticleLine className="size-3" />,
         }
       ],
-      image: "/wip.png",
+      image: "/rfdiff.png",
       video: "",
     },
     {
@@ -239,8 +273,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
         "Typescript",
         "Kotlin",
         "Knowledge Graph",
-        "Web sémantique",
-        ""
+        "Web sémantique"
       ],
       links: [
         {
