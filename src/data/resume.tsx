@@ -14,6 +14,13 @@ export const DATA = {
     `,
   avatarUrl: "/me.jpg",
   skills: [
+    "C#",
+    "XUnit",
+    "LinQ",
+    "Entity Framework 6 Core",
+    "Azure Devops",
+    "Azure Pipelines",
+    "TailwindCSS",
     "React",
     "Next.js 13",
     "Next.js 14 (App router)",
@@ -22,7 +29,6 @@ export const DATA = {
     "Typescript",
     "Node.js",
     "Python",
-    "C#",
     "Java",
     "Dockerfile",
     "Docker-compose",
@@ -198,14 +204,15 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
         "Design patterns",
         "SQL",
       ],
+      
       links: [
         {
           type: "Article",
-          href: "www.jonathanmartinmaestre.fr/blog/recovery-optimisation",
+          href: "blog/recovery-optimisation",
           icon: <RiArticleLine className="size-3" />,
         }
       ],
-      image: "/wip.png",
+      image: "/recovery.png",
       video: "",
     },
     {
@@ -214,8 +221,8 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
       dates: "Juin 2025 - Maintenant",
       active: true,
       description:
-        "Nous avons crée un PlugIn interne utilisé à des fins de reprises différentielles de données concurrentes." +
-        " Cet outil nous permets de répondre a une problématique d'optimisation des données et des temps de traitements liés au nombre massif de documents clients." ,
+        "Nous avons créé un PlugIn interne utilisé à des fins de reprises différentielles de données concurrentes." +
+        " Cet outil nous permet de répondre à une problématique d'optimisation des données et des temps de traitements liés au nombre massif de documents clients." ,
         technologies: [
         "C#",
         "Optimisation",
@@ -232,7 +239,7 @@ automatiquement des images d'enluminures médiévales (apprentissage profond).`,
           icon: <RiArticleLine className="size-3" />,
         }
       ],
-      image: "/wip.png",
+      image: "/rfdiff.png",
       video: "",
     },
     {
